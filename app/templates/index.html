@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="statics/css/styles.css">
-    <link rel="icon" type="image/png" sizes="32x32" href="statics/images/favicon-16x16.png">
+    <link rel="stylesheet" href="{{ url_for('statics', filename='css/style.css') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('statics', filename='css/favicon-16x16.png') }}">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <main>
     <header>
         <section class="logo">
-            <a href="#home"><img src="statics/images/LOGO.png" alt="LOGO"></a>
+            <a href="#home"><img src="{{ url_for('statics', filename='/images/LOGO.png')}}" alt="LOGO"></a>
         </section>
         <nav>
             <ul>
@@ -25,7 +25,7 @@
     </header>
           <section class="topo">
             <article id="home" class="box box1">
-                <img src="statics/images/perfil.png" alt="Imagem Central" class="central-img">
+                <img src="{{ url_for('statics', filename='/imagess/perfil.png')}}" alt="Imagem Central" class="central-img">
                 <h2>João Vitor</h2>
                 <p>Estudante</p>
                 <aside class="image-gallery">
@@ -84,7 +84,7 @@
                 <h1>Projetos</h1>
                 <section class="card-container">
                     <article class="card">
-                        <img src="statics/images/Logo API.png" alt="Avatar" style="width:100%">
+                        <img src="{{ url_for('statics', filename='/images/Logo API.png')}}" alt="Avatar" style="width:100%">
                         <div class="container">
                             <h4><b>Projeto Acadêmico Desempenho de Vereadores</b></h4>
                             <p>Os alunos devem criar uma plataforma web com dados sobre o desempenho dos vereadores da cidade, a fim de ajudar eleitores nas próximas eleições.</p>
