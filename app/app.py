@@ -2,12 +2,12 @@ from flask import Flask, render_template
 
 app = Flask(__name__)
 
-@app.route('/Home')
+@app.route('/')
 def index():
     return render_template('index.html')
 
-@app.route('/API')
-def index():
+@app.route('/api')
+def api():
     return render_template('API.html')
 
 if __name__ == '__main__':
