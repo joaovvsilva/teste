@@ -19,6 +19,7 @@
                 <li><a href="#home">Home</a></li>
                 <li><a href="#sobre">Sobre</a></li>
                 <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#certificados">Certificados</a></li>
                 <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
@@ -94,9 +95,13 @@
                 </section>
             </article>
 
-            <article id="projetos" class="box box2">
+            <article id="certificados" class="box box4">
                 <h1>Certificados</h1>
-                
+                <div class="img-container">
+                    <img src="{{ url_for('static', filename='/images/C1.jpg')}}" alt="Certificado 1" class="thumbnail">
+                    <img src="{{ url_for('static', filename='/images/C2.jpg')}}" alt="Certificado 2" class="thumbnail">
+                </div>
+                <a href="{{ url_for('api') }}"><button class="ver-mais-btn">Ver Mais</button></a>
             </article>
 
             <article id="contato" class="box box3">
